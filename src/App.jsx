@@ -1,7 +1,7 @@
 import './App.css';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from "./Components/Footer"; 
-import MiniProjects from './Components/MiniProjects';
+import RandomThoughts from './Components/RandomThoughts';
 import MobileNavigationMenu from './Components/MobileNavigationMenu';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       
 
         
-         <MiniProjects />
+         <RandomThoughts />
         
         <MobileNavigationMenu />
         <Footer />  {/* Footer */}
