@@ -1,0 +1,74 @@
+  
+  .customScrollContainer  {
+    display: none;
+  }
+  #navbarAlign {
+    display: none;
+  }
+  :root {
+    --mobileMenuContainerHeight: 58px;
+    --mobileMenuContainerWidth: 94.5%;
+  }
+.mobileMenusContainer {
+  height: var(--mobileMenuContainerHeight);
+  width: var(--mobileMenuContainerWidth);
+  max-width:400px;
+  border-radius: 58px 58px 0px 0px;
+  background-color: rgb(31, 31, 31);
+  position:fixed ;
+  bottom: 0px;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mobileMenusConrainerGradient {
+  max-width: 400px;
+  height: var(--mobileMenuContainerHeight);
+  width: var(--mobileMenuContainerWidth);
+  background: linear-gradient(to left, #FF0000 10%,#f59f00 15%, #f59f00 85%, #FF0000 90%);
+  position: fixed;
+  bottom: 2px;
+  border-radius: 120px 120px 0px 0px;
+  z-index: 3; 
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+@media screen and (min-width: 1500px) {
+  .mobileMenusContainer {
+    bottom: 5px;
+ 
+  }
+.mobileMenusConrainerGradient {
+  bottom: 7px;
+
+}
+}
+.mobileMenus{
+height: 42px;
+width: 42px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+transition: height 0.3s, width 0.3s, transform 0.3s;
+}
+#home{
+  background-image: url("../Images/home2.png");
+
+}
+#miniProjects{
+  background-image: url("../Images/miniProjects2.png");
+
+}
+#randomThoughts{
+  background-image: url("../Images/randomThoughts.png");
+  height: 60px;
+  width: 64px;
+  transform:translateY(-30%) ;
+  filter: drop-shadow(0px -0.25px 0.5px #ff1919);
+}
+

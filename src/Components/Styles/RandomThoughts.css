@@ -1,0 +1,70 @@
+.comingSoon {
+  font-size: 2rem;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+padding: 0px 20px;
+}
+
+    
+
+.comingSoon p{
+    background: linear-gradient(-45deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    -webkit-animation: gradient 3s ease infinite;
+    animation: gradient 3s ease infinite;
+    cursor: default;
+
+    --color-purple: #ff0000;
+    --color-light-purple: #e9d200;
+    --color-light-blue: #ff0000;
+    --color-navbarBorder-dark: #20222e10;
+    --color-shadowDark: rgba(0, 0, 0, 0.137);
+    font-family: "Fredoka", sans-serif;
+    font-size: 8rem;
+    font-weight: 900;
+}
+@media screen and (max-width: 415px) {
+    .comingSoon p{
+        font-size: 7.5rem;
+    }
+}
+@media screen and (max-width: 390px) {
+    .comingSoon p{
+        font-size: 7rem;
+    }
+    .comingSoon div{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 345px) {
+    .comingSoon p{
+        font-size: 6rem;
+    }
+    
+}
+.comingSoon div{
+    font-family: "Fredoka", sans-serif;
+
+color: white;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    
+    100% {
+        background-position: 0 50%;
+    }
+}
